@@ -1,4 +1,4 @@
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PoissonBinomial_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PoissonBinomial/PoissonBinomial_{{ version }}.tar.gz
-  sha256: efd4f7e37ae60bb67a229c8d3fa6b94fd2d34eab980edaf3f72e77cd31eea15b
+  sha256: 5ea2da23abe46898dceecc59f78c1b8c06cd450b54d5dbead9cb4d7122cc9e01
 
 build:
   merge_build_host: true  # [win]
