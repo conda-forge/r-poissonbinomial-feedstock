@@ -3,6 +3,7 @@ About r-poissonbinomial-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-poissonbinomial-feedstock/blob/main/LICENSE.txt)
 
+
 About r-poissonbinomial
 -----------------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=PoissonBinomial
 Package license: GPL-2.0-or-later
 
 Summary: Efficient implementations of multiple exact and approximate methods as described in Hong (2013) <doi:10.1016/j.csda.2012.10.006>, Biscarri, Zhao & Brunner (2018) <doi:10.1016/j.csda.2018.01.007> and Zhang, Hong & Balakrishnan (2018) <doi:10.1080/00949655.2018.1440294> for computing the probability mass, cumulative distribution and quantile functions, as well as generating random numbers for both the ordinary and generalized Poisson binomial distribution.
+
 About r-poissonbinomial
 -----------------------
 
@@ -24,7 +26,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/r-poissonbinomial-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/r-poissonbinomial-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -49,6 +58,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12969&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-poissonbinomial-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12969&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-poissonbinomial-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12969&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-poissonbinomial-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12969&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-poissonbinomial-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12969&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-poissonbinomial-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
