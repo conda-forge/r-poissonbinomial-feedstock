@@ -1,6 +1,5 @@
 {% set version = "1.2.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-poissonbinomial
@@ -13,8 +12,7 @@ source:
   sha256: 5020f3eb38cfea7fbfd4082df96503e23dee3fa0e12ce8468688ba61feace7bc
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -37,7 +37,6 @@ requirements:
     - fftw
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=1.0.3
     - fftw
 
