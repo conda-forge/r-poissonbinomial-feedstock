@@ -1,4 +1,4 @@
-{% set version = "1.2.6" %}
+{% set version = "1.2.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PoissonBinomial_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PoissonBinomial/PoissonBinomial_{{ version }}.tar.gz
-  sha256: 5020f3eb38cfea7fbfd4082df96503e23dee3fa0e12ce8468688ba61feace7bc
+  sha256: 60cc429ec7180003f7a961015fa8392ac22785d1bbc3c3d31d3187367585616f
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
