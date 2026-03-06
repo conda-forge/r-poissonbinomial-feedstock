@@ -1,4 +1,4 @@
-{% set version = "1.2.7" %}
+{% set version = "1.2.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PoissonBinomial_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PoissonBinomial/PoissonBinomial_{{ version }}.tar.gz
-  sha256: 60cc429ec7180003f7a961015fa8392ac22785d1bbc3c3d31d3187367585616f
+  sha256: 76dc2b362fed728da1c4da34ba20dfb484d78c989a6263226c73d05aa944d048
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,8 +48,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=PoissonBinomial
   license: GPL-2.0-or-later
-  summary: Efficient implementations of multiple exact and approximate methods as described in Hong (2013) <doi:10.1016/j.csda.2012.10.006>, Biscarri, Zhao & Brunner (2018) <doi:10.1016/j.csda.2018.01.007> and Zhang, Hong & Balakrishnan (2018) <doi:10.1080/00949655.2018.1440294> for computing the probability mass, cumulative
-    distribution and quantile functions, as well as generating random numbers for both the ordinary and generalized Poisson binomial distribution.
+  summary: Efficient implementations of multiple exact and approximate methods as described in Hong (2013) <doi:10.1016/j.csda.2012.10.006>, Biscarri, Zhao & Brunner (2018) <doi:10.1016/j.csda.2018.01.007> and Zhang, Hong & Balakrishnan (2018) <doi:10.1080/00949655.2018.1440294> for computing the probability mass, 
+    cumulative distribution and quantile functions, as well as generating random numbers for both the ordinary and generalized Poisson binomial distribution.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
